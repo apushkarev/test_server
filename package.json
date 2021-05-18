@@ -1,0 +1,26 @@
+{
+  "name": "test_server",
+  "version": "0.0.1",
+  "description": "Test backend playground for Lenflash AVT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apushkarev/test_server.git"
+  },
+  "keywords": [
+    "lenflash",
+    "avt",
+    "node",
+    "backend",
+    "editor"
+  ],
+  "author": "Aleksey Pushkarev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apushkarev/test_server/issues"
+  },
+  "homepage": "https://github.com/apushkarev/test_server#readme"
+}
