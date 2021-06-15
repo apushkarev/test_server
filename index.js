@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 app.post('/api/saveFile', (req, res) => {
   conslole.log(req);
   conslole.log({...req.body});
-  res.status(202).send({message: 'Accepted'})
+  res.status(202).send({message: 'Accepted'});
 });
 
 app.listen(80, () => console.log('listening at 80'));
