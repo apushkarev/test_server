@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
-const fs = require('fs')
+const fs = require('fs');
+const path = require('path');
+
 
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.send({ message: 'Hello WWW!' });
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 app.post('/api/saveFile', (req, res) => {
