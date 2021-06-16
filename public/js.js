@@ -6,7 +6,7 @@ async function sendTestRequest() {
   const data = JSON.stringify('test');
 
   const response = await fetch(`https://avt-editor.lenflash.com/api/saveFile`, {
-    method: 'POST',
+    'POST',
     headers,
     data
   });
