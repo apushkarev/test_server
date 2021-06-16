@@ -3,10 +3,11 @@ const app = express();
 const fs = require('fs');
 const path = require('path');
 
-app.use(express.static(path.resolve(__dirname, 'client')));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client', 'index.html'));
+app.get('*', (req, res) => {
+  // res.sendFile(`${__dirname}/public/index.html`);
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 });
 
 app.post('/api/saveFile', (req, res) => {
