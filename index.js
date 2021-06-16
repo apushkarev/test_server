@@ -11,7 +11,6 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/saveFile', (req, res) => {
-  console.log(req);
   console.log({...req.body});
   res.status(202).send({message: 'Accepted'});
 });
