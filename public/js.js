@@ -10,7 +10,7 @@ async function sendTestRequest() {
 
   const response = await request(`https://avt-editor.lenflash.com/api/saveFile`, 'POST', data);
 
-  console.log(await response.json());
+  console.log(response);
 }
 
 async function request(url, method = 'GET', data = null) {
