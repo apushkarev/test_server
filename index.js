@@ -7,6 +7,7 @@ app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 console.log(path.resolve(__dirname, 'public', 'index.html'));
+console.log(1);
 
 app.get('/', (req, res) => {
   // res.sendFile(`${__dirname}/public/index.html`);
